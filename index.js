@@ -20,3 +20,4 @@ document.querySelectorAll('.card__button-answer').forEach(answerButton => {
     this.innerText = answerParagraph.classList.contains('hidden') ? 'Show answer' : 'Hide answer';
   });
 });
+console.log 
