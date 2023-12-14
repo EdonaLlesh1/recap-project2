@@ -1,11 +1,8 @@
 // phew… not a lot going on here. Please add some code!
-//const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
+const answer = document.querySelector('[data-js="card-answer"]');
+const showAnswerButton = document.querySelector('[data-js="answerButton"]');
 
-//bookmarkButton.addEventListener("click", () => {
-  //bookmarkButton.classList.toggle("bookmark--active");
-//});
-
-document.querySelectorAll('.bookmark').forEach(bookmarkButton => {
+document.querySelectorAll('[data-js="bookmark-button"]').forEach(bookmarkButton => {
   bookmarkButton.addEventListener('click', function () {
     this.classList.toggle('active');
     const icon = this.querySelector('.bookmark__icon');
@@ -20,4 +17,3 @@ document.querySelectorAll('.card__button-answer').forEach(answerButton => {
     this.innerText = answerParagraph.classList.contains('hidden') ? 'Show answer' : 'Hide answer';
   });
 });
-console.log 
